@@ -1,0 +1,12 @@
+@mixin mobile
+  @media screen and (max-width: 375px)
+    @content
+
+@mixin size($w, $h)
+  width: $w
+  height: $h
+
+@mixin whiteBackground($y:0px)
+  border-radius: 10px
+  background: #FFFFFF
+  box-shadow: 0 $y 15px 0 rgba(0,0,0,0.15)
