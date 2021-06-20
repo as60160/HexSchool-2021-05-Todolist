@@ -7,7 +7,7 @@ const clearBtn = document.querySelector(".clearBtn")
 const data = []
 
 addBtn.addEventListener("click", addItem)
-text.addEventListener("keyup", addItem)
+text.addEventListener("keyup", detectKey)
 list.addEventListener("click", deleteItem)
 list.addEventListener("click", changeItemState)
 nav.addEventListener("click", changeCategory)
@@ -49,8 +49,12 @@ function updateUndoneNumber() {
   undoneNumber.textContent = undone.length
 }
 
-function addItem(e) {
+function detectKey(e){
   if (e.key !== "Enter") return
+  addItem()
+}
+
+function addItem() {
   if (!text.value) {
     alert("請輸入待辦事項")
     return
