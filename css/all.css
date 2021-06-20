@@ -115,7 +115,6 @@ h1 {
 @media screen and (max-width: 376px) {
   .inputWrap .textInput {
     padding-left: 16px;
-    max-width: 350px;
   }
 }
 
