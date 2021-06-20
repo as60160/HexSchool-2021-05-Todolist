@@ -7,6 +7,7 @@ const clearBtn = document.querySelector(".clearBtn")
 const data = []
 
 addBtn.addEventListener("click", addItem)
+text.addEventListener("keyup", addItem)
 list.addEventListener("click", deleteItem)
 list.addEventListener("click", changeItemState)
 nav.addEventListener("click", changeCategory)
@@ -15,7 +16,7 @@ clearBtn.addEventListener("click", cleanDoneItems)
 renderData()
 
 function renderData(items) {
-  let newList = []
+  let newList
   let str = ""
   if (data.length !== 0) {
     document.querySelector(".listWrap").style.display = "block"
@@ -44,16 +45,17 @@ function renderData(items) {
 }
 
 function updateUndoneNumber() {
-  let undone = data.filter(item => item.isDone == false)
+  const undone = data.filter(item => item.isDone == false)
   undoneNumber.textContent = undone.length
 }
 
-function addItem() {
+function addItem(e) {
+  if (e.key !== "Enter") return
   if (!text.value) {
     alert("請輸入待辦事項")
     return
   }
-  let newItem = {
+  const newItem = {
     content: text.value.trim(),
     isDone: false
   }
@@ -64,7 +66,7 @@ function addItem() {
 
 function deleteItem(e) {
   if (e.target.nodeName == "IMG") {
-    let num = e.target.parentNode.getAttribute("data-num")
+    const num = e.target.parentNode.getAttribute("data-num")
     data.splice(num, 1)
     renderData()
   }

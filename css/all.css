@@ -73,7 +73,7 @@ a {
 
 .container {
   max-width: 500px;
-  margin: 0 auto 50px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 375px) {
@@ -195,11 +195,14 @@ h1 {
 
 .listWrap .list {
   padding: 24.5px 16px 24.5px 24px;
+  max-height: 45vh;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 375px) {
   .listWrap .list {
     padding: 16px 24.5px;
+    max-height: 50vh;
   }
 }
 

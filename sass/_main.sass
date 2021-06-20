@@ -23,7 +23,7 @@ a
 
 .container
   max-width: 500px
-  margin: 0 auto 50px
+  margin: 0 auto
   @include mobile
     padding: 12px
 
@@ -102,8 +102,11 @@ h1
 // list
 .listWrap .list
   padding: 24.5px 16px 24.5px 24px
+  max-height: 45vh
+  overflow-y: auto
   @include mobile
     padding: 16px 24.5px
+    max-height: 50vh
 
 .listWrap .list li
   display: flex
