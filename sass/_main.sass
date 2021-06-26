@@ -47,14 +47,14 @@ h1
   line-height: 16px
   border: rgba(0,0,0,15%)
   &::-webkit-input-placeholder, &::-moz-placeholder
-    color: $color_lightgray
+    color: $color_secondary
   @include mobile
     padding-left: 16px
 
 .inputWrap .addBtn
   +size(40px,40px)
   border-radius: 10px
-  background: $color_darkgray
+  background: $color_emphasize
   color: $color_white
   font-size: 32px
   line-height: 40px
@@ -63,7 +63,7 @@ h1
   right: 4px
   top: 4px
   &:hover
-    background: lighten($color_darkgray, 10%)
+    background: lighten($color_emphasize, 10%)
   &:active
     transform: scale(0.9)
 
@@ -78,7 +78,7 @@ h1
   text-align: center
   font-size: 14px
   font-weight: 400
-  color: $color_lightgray
+  color: $color_secondary
   display: flex
   justify-content: space-between
 
@@ -88,15 +88,15 @@ h1
 .listWrap .nav a
   width: 100%
   line-height: 50px
-  border-bottom: 2px solid #efefef
+  border-bottom: 2px solid $color_light
   &:hover
-    background: lighten($color_yellow,10%)
-    color: $color_darkgray
+    background: lighten($color_primary,10%)
+    color: $color_emphasize
 
 .listWrap .nav .active
   font-weight: 700
-  color: $color_darkgray
-  border-bottom: 2px solid $color_darkgray
+  color: $color_emphasize
+  border-bottom: 2px solid $color_emphasize
 
 // list
 .listWrap .list
@@ -113,18 +113,18 @@ h1
   cursor: pointer
   transition: .2s
   &:hover p
-    border-bottom: 1px solid $color_darkgray
+    border-bottom: 1px solid $color_emphasize
   &:hover .deleteBtn
     display: inline-block
 
 .listWrap .list .undone
   +size(20px,20px)
-  border: 1px solid $color_darkgray
+  border: 1px solid $color_emphasize
   border-radius: 5px
 
 .listWrap .list .done
   +size(20px, 20px)
-  color: $color_yellow
+  color: $color_primary
   &::before
     content: "\f00c"
     font-family: "Font Awesome 5 Free"
@@ -132,7 +132,7 @@ h1
     display: inline-block
     transform: translate(18%, -10%)
   & + p
-    color: lighten($color_darkgray, 30%)
+    color: lighten($color_emphasize, 30%)
     text-decoration: line-through
 
 .listWrap .list p
@@ -141,7 +141,7 @@ h1
   line-height: 24px
   padding: 16px 0
   margin-left: 16px
-  border-bottom: 1px solid #efefef
+  border-bottom: 1px solid $color_light
   @include mobile
     width: 280px
 
@@ -170,11 +170,11 @@ footer
     padding: 0 16px 24px
 
 footer .clearBtn
-  color: $color_lightgray
+  color: $color_secondary
   padding: 10px 15px
   &:hover
-    color: $color_darkgray
-    background: darken($color_yellow, 10%)
+    color: $color_emphasize
+    background: darken($color_primary, 10%)
     border-radius: 10px
   &:active
     transform: scale(0.95)
