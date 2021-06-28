@@ -1,7 +1,7 @@
 # JS - To do list
 
 ## Demo
-- [Demo](https://as60160.github.io/hexschool-2021-05-todolist/)
+- [Demo](https://as60160.github.io/HexSchool-2021-05-Todolist/)
 
 ## 來源
 - 六角學院 2021 程式體驗營
