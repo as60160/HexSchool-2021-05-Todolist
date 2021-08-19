@@ -1,5 +1,7 @@
 # JS - To do list
 
+![Demo](https://i.imgur.com/fw6BnxN.png)
+
 ## Demo
 - [Demo](https://as60160.github.io/HexSchool-2021-05-Todolist/)
 
