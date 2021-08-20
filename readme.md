@@ -8,7 +8,7 @@
 ## 來源
 - 六角學院 2021 程式體驗營
 - 切版任務 05
-- [設計稿](https://hackmd.io/J7ajdobzTlyideAARTLz5Q?view)
+- [設計稿](https://hexschool.github.io/js-todo/#artboard0)
 
 ## 使用技術/框架
 - Sass
@@ -22,6 +22,6 @@
 - 篩選資料 (全部/待完成/已完成)
 - 清除所有已完成項目
 
-## 第三方套件
+## 其他
 - Font Awesome
 - Google Fonts
